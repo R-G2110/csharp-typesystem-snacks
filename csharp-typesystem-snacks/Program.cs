@@ -205,7 +205,7 @@
             //Separatore
 
             // Snack 8
-            Console.WriteLine("Snack 8");
+            Console.WriteLine("Snack 8:");
             Console.WriteLine("Fa la somma di tutti gli elementi che sono in posizione dispari.");
 
             //Dichiarazione e definizione dell'array
@@ -230,18 +230,33 @@
             //Separatore
 
             // Snack 9
-            Console.WriteLine("\nSnack 9");
+            Console.WriteLine("Snack 9:");
+            Console.WriteLine("Il software chiede all’utente un numero fino a quando la somma degli elementi è minore di 50.");
+
+            //Dichiarazione e definizione dell'array
             int[] numeriArray = new int[10];
+
+            //Dichiarazione e definizione della variabile somma e indice 
             int sommaArray = 0;
             int index = 0;
+
+            //Ciclo while per l'inserimento del numero
             while (sommaArray < 50 && index < 10)
             {
                 Console.Write("Inserisci un numero: ");
                 int num = Convert.ToInt32(Console.ReadLine());
+
+                //Inserimento del numero nell'array
                 numeriArray[index] = num;
+
+                //Somma il numero alla variabile somma
                 sommaArray += num;
+
+                //Incremento indice
                 index++;
             }
+
+            //Stampa array
             Console.WriteLine("Array completo:");
             foreach (int num in numeriArray)
             {
