@@ -269,13 +269,24 @@
             //Separatore
 
             // Snack 10
-            Console.WriteLine("\nSnack 10");
+            Console.WriteLine("Snack 10:");
+            Console.WriteLine("Il software genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.");
+
+            //Dichiarazione e definizione della variabile N tramite console
             Console.Write("Inserisci un numero (N): ");
             int N = Convert.ToInt32(Console.ReadLine());
+
+
+            //Creazione di un nuovo oggetto della classe Random
             Random random = new Random();
+
+            //Ciclo for che genera N array
             for (int i = 0; i < N; i++)
             {
+                //Dichiarazione e definizione dell'array 
                 int[] arrayCasuale = new int[10];
+
+                //Ciclo for per stampare 10 numeri casuali
                 Console.WriteLine($"Array {i + 1}:");
                 for (int j = 0; j < 10; j++)
                 {
