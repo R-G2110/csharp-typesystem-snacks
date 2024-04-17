@@ -87,15 +87,27 @@
             //Separatore
 
             // Snack 4
-            Console.WriteLine("Snack 4");
+            Console.WriteLine("Snack 4:");
+            Console.WriteLine("Calcola la somma e la media dei numeri da 2 a 10.");
+
+            //Dichiarazione ed assegnazione delle variabili somma e divisore per la media
             int sumSnack4 = 0;
             int averageDividerSnack4 = 0;
-            for (int i = 2;i <= 10;i++) 
+
+            //Ciclo partendo da 2 fino a 10 (compresso)
+            for (int i = 2; i <= 10; i++) 
             {
+                //Somma la variabile i nella variabile somma
                 sumSnack4 += i;
+
+                //Aumento della variabile divisore per la media
                 averageDividerSnack4++;
             }
+
+            //Stampa della variabile somma
             Console.WriteLine($"La somma dei numeri da 2 a 10 è: {sumSnack4}");
+
+            //Stampa la media 
             Console.WriteLine($"La media dei numeri da 2 a 10 è: {sumSnack4 / averageDividerSnack4}");
 
             //Separatore
