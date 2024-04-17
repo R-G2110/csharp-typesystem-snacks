@@ -116,10 +116,17 @@
             //Separatore
 
             // Snack 5
-            Console.WriteLine("Snack 5");
+            Console.WriteLine("Snack 5:");
+            Console.WriteLine("Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.");
+
+            //Inserimento del numero
             Console.Write("Inserisci un numero: ");
             int inputNum = Convert.ToInt32(Console.ReadLine());
+
+            //Dichiarazione ed assegnazione con il controllo se pari o dispari
             int outputNum = inputNum % 2 == 0 ? inputNum : inputNum + 1;
+
+            //Stampa del numero
             Console.WriteLine($"Il numero stampato è: {outputNum}");
 
             //Separatore
