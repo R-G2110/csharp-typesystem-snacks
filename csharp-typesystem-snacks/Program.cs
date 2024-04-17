@@ -170,17 +170,26 @@
 
             // Snack 7
             Console.WriteLine("Snack 7:");
-            
+            Console.WriteLine("Il software chiede per 6 volte all’utente di inserire un numero, se è dispari lo inserisce nell’array.");
+
+            //Dichiarazione e definizione dell'array
             int[] numeriDispari = new int[6];
+
+            //Ciclo for per l'inserimento di 6 numeri
             for (int i = 0; i < 6; i++)
             {
                 Console.Write($"Inserisci il numero {i + 1}: ");
                 int num = Convert.ToInt32(Console.ReadLine());
+
+                //Controllo se il numero inserito è pari o dispari
                 if (num % 2 != 0)
                 {
+                    //Inserimento del numero nell'array
                     numeriDispari[i] = num;
                 }
             }
+
+            //Stampa dell'array
             Console.WriteLine("Numeri dispari inseriti:");
             foreach (int num in numeriDispari)
             {
