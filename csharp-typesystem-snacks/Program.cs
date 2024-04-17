@@ -29,7 +29,7 @@
             //Separatore
 
             // Snack 2
-            Console.WriteLine("Snack 2");
+            Console.WriteLine("Snack 2:");
             Console.WriteLine("Il software stampa prima la parola più corta, poi la parola più lunga.");
             Console.WriteLine();
 
@@ -60,14 +60,25 @@
             //Separatore
 
             // Snack 3
-            Console.WriteLine("Snack 3");
+            Console.WriteLine("Snack 3:");
+            Console.WriteLine("Il software chiede per 10 volte di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.");
+            Console.WriteLine();
+
+            //Dichiarazione ed assegnazione della variabile somma
             int sum = 0;
+
+            //Ciclo for per l'inserimento di 10 numeri
             for (int i = 0; i < 10; i++)
             {
+                //Inserimento del numero
                 Console.Write($"Inserisci il numero {i + 1}: ");
                 int num = Convert.ToInt32(Console.ReadLine());
+
+                //Somma il numero inserito nella variabile somma
                 sum += num;
             }
+
+            //Stampa della variabile somma
             Console.WriteLine($"La somma di tutti i numeri inseriti è: {sum}");
 
             //Separatore
