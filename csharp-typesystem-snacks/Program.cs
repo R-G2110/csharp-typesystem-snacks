@@ -206,12 +206,22 @@
 
             // Snack 8
             Console.WriteLine("Snack 8");
+            Console.WriteLine("Fa la somma di tutti gli elementi che sono in posizione dispari.");
+
+            //Dichiarazione e definizione dell'array
             int[] numeri = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+
+            //Dichiarazione e definizione della variabile somma
             int sumPosizioniDispari = 0;
+
+            //Ciclo for per fare la somma dell'array partendo con indice 1 e aumento di 2 per poter accedere alle posizioni dispari
             for (int i = 1; i < numeri.Length; i += 2)
             {
+                //Somma gli elementi dell'array alla variabile somma
                 sumPosizioniDispari += numeri[i];
             }
+
+            //Stampa la variabile somma
             Console.WriteLine($"La somma degli elementi in posizioni dispari è: {sumPosizioniDispari}");
 
             //Separatore
