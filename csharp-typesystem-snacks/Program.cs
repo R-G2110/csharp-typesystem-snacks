@@ -30,16 +30,28 @@
 
             // Snack 2
             Console.WriteLine("Snack 2");
+            Console.WriteLine("Il software stampa prima la parola più corta, poi la parola più lunga.");
+            Console.WriteLine();
+
+            //Inserimento della prima parola
             Console.Write("Inserisci la prima parola: ");
-            string word1 = Console.ReadLine();
+            string word1 = Console.ReadLine().Trim();
             Console.Write("Inserisci la seconda parola: ");
-            string word2 = Console.ReadLine();
+
+            //Inserimento della seconda parola
+            string word2 = Console.ReadLine().Trim();
+
+            //Stampa se la lunghezza delle 2 parole inserite sono uguali 
             if (word1.Length == word2.Length) 
             {
                 Console.WriteLine($"La lunghezza della prima parola e della seconda parola sono uguali.");
             }
+
+            //Assegnazione della parola corta e parola lunga
             string shortStr = word1.Length < word2.Length ? word1 : word2;
             string longStr = word1.Length > word2.Length ? word1 : word2;
+
+            //Stampa della parola corta e parola lunga
             Console.WriteLine($"La parola più corta è: {shortStr}, la parola più lunga è: {longStr}");
 
             //Separatore
