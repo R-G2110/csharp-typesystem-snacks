@@ -136,12 +136,31 @@
 
             
             // Snack 6
-            Console.WriteLine("Snack 6");
+            Console.WriteLine("Snack 6:");
+            Console.WriteLine("In una lista sono contenuti i nomi degli invitati alla festa del grande Gatsby. il software chiede  il nome dell’utente e comunica se può partecipare o meno alla festa.");
+            
+            //Dichiarazione e definizione dell'array
             string[] invitati = { "mario", "luigi", "peach", "yoshi", "toad" };
+
+            //Inserimento del nome
             Console.Write("Inserisci il tuo nome: ");
             string nomeUtente = Console.ReadLine().ToLower();
+
+            //Dichiarazione e definizione di una variabile booleana con una funzione Contains
             bool partecipa = invitati.Contains(nomeUtente);
+
+            //Stampa del messaggio se l'utente può partecipare alla festa
             Console.WriteLine(partecipa ? "Sei invitato alla festa!" : "Mi dispiace, non sei invitato.");
+            Console.WriteLine();
+
+            //Lista dei partecipanti
+            Console.WriteLine("Lista dei partecipanti: ");
+
+            //Ciclo per stampare l'array 
+            for (int i = 0; i <= invitati.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {invitati[i]} ");
+            }
 
 
             //Separatore
@@ -150,7 +169,8 @@
             //Separatore
 
             // Snack 7
-            Console.WriteLine("\nSnack 7");
+            Console.WriteLine("Snack 7:");
+            
             int[] numeriDispari = new int[6];
             for (int i = 0; i < 6; i++)
             {
